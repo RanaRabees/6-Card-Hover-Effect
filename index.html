@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hover Card</title>
+</head>
+<body>
+     <div class="card">
+        <div class="face face1">
+            <h2>Rana Rabees:</h2>
+            <p>Quaid-e-Azam Muhammad Ali Jinnah Once Said That Faith, Unity, Discipline is 
+                the national motto of Pakistan.</p>
+            <a href="https://youtu.be/DEkzMOt3VGM" 
+            target="_rana" >Read More</a>    
+        </div>
+        <div class="face face2">
+            <h2><img src="https://avatars.githubusercontent.com/u/104692519?s=400&u=78c01fb3b334610c179ac4fbdda5031b8571a252&v=4" alt=""></h2>
+        </div>
+     </div>
+<style>
+    /* Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: algerian;
+    font-style: italic;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1664309793584-583d344ba6c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background-image: url('https://images.unsplash.com/photo-1664392171684-c4ebf0a2e1a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80');
+    background-size: cover;
+    transition: 0.5s;
+}
+.face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+.face1{
+   text-align: center;
+   padding: 2px;
+   color: #073668; 
+   transition: 0.5s; 
+
+}
+.face1 h2{
+    text-transform: uppercase;
+    margin-top: 120px;
+}
+
+.face1 p{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(202, 195, 0);
+}
+.face1 a{
+    margin-top: 28px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #073668;
+    border: 3px dotted #266807;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #1ea500;
+    
+
+} 
+.face2{
+    background-image: url('https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1259&q=80');
+    background-size: 100% 100%;
+    transition: 0.5s; 
+
+}
+.face2 h2{
+    font-size: 120px;
+    color: white;
+    transition: 0.5s;
+}
+img,
+.card:hover .face2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 50px;
+    left: 38%;
+    background-image: url('https://images.unsplash.com/photo-1664305179705-c467c33dafc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1445&q=80');
+    background-size: cover;
+    border: 2px dotted #073668;
+    
+}
+.card:hover .face2 h2{
+    font-size: 30px;
+    color: brown;
+}
+h2{
+    font-size: 30px;
+    /* color: #073668; */
+    color: brown;
+} 
+</style>
+</body>
+</html>
